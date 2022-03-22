@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import sklearn
-# from sklearn import datasets
+from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 #PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
