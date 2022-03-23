@@ -99,5 +99,13 @@ def main():
 #   st.subheader("상태예측 3rd")
 #   st.write(iris.target_names)
 
+
+if st.checkbox('지도 표시'):
+	map_data = pd.DataFrame(
+		np.random.randn(10,2)) / [50,50] + [35.452555, 128.140043]
+	st.map(map_data)
+
+
+
 if __name__ == '__main__':
 	main()
