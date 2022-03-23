@@ -109,7 +109,7 @@ if __name__ == '__main__':
 	
 if st.checkbox('지도 표시'):
 	map_data = pd.DataFrame(
-		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
+		np.random.randn(10,2) / [1000,50] + [35.74544992, 128.0814886],
     columns=['lat','lon'])
 	st.map(map_data)
 		
