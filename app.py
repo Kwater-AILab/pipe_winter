@@ -93,18 +93,14 @@ def main():
 #   st.write(iris.target_names)
   st.write(y_test, predict_)
 
-  chart_data = pd.DataFrame(
-	  y_test, predict_,
-	  columns=['a','b'])
-  st.line_chart(chart_data)
+#   chart_data = pd.DataFrame(
+# 	  y_test, predict_,
+# 	  columns=['실측치',''])
+#   st.line_chart(chart_data)
 
 
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
-
-#   st.subheader("상태예측 3rd")
-#   st.write(iris.target_names)
-
 
 
 if __name__ == '__main__':
