@@ -92,8 +92,7 @@ def main():
 	
   st.subheader("함내 상태 예측")
 #   st.write(iris.target_names)
-  if st.checkbox('실측-예측 rank '):
-	st.write(y_test, predict_)
+  st.write(y_test, predict_)
 
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
