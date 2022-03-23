@@ -94,6 +94,7 @@ def main():
 #   st.write(iris.target_names)
   st.write(y_test, predict_)
 
+  st.line_chart(y_test, predict_)	 
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
 
