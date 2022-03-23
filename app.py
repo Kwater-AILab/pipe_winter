@@ -89,12 +89,16 @@ def main():
 
   st.line_chart(predict_)
 
-	
   st.subheader("함내 상태 예측")
 #   st.write(iris.target_names)
   st.write(y_test, predict_)
 
-  st.line_chart(y_test, predict_)	 
+  chart_data = pd.DataFrame(
+	  y_test, predict_,
+	  columns=['a','b'])
+  st.line_chart(chart_data)
+
+
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
 
