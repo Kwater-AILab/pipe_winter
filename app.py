@@ -100,12 +100,14 @@ def main():
 #   st.write(iris.target_names)
 
 
-if st.checkbox('지도 표시'):
-	map_data = pd.DataFrame(
-		np.random.randn(10,2) / [50,50] + [35.452555, 128.140043],
-    columns=['lat','lon'])
-	st.map(map_data)
-
 
 if __name__ == '__main__':
 	main()
+
+	
+if st.checkbox('지도 표시'):
+	map_data = pd.DataFrame(
+		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
+    columns=['lat','lon'])
+	st.map(map_data)
+		
