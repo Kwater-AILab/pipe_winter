@@ -80,7 +80,7 @@ def main():
 ########### END
 	
 	
-  st.subheader("[검증set 전체 예측 확률]")
+  st.subheader("[검증set 전체 예측 확률의 분포]")
   st.write(predict_proba)
 
   st.bar_chart(predict_proba[7:15])
