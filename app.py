@@ -70,7 +70,7 @@ def main():
   st.subheader("예측 확률")
   st.write(predict_proba)
 
-  st.bar_chart(predict_proba[3:10])
+  st.bar_chart(predict_proba[7:12])
 
 # -----------------------------------------------
   from sklearn.metrics import mean_absolute_error
