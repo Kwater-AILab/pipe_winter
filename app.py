@@ -39,7 +39,7 @@ def main():
 
   df= user_input_features()
 
-  st.subheader("주요 파라미터를 설정.")
+  st.subheader("User의 주요 파라미터 설정치.")
   st.write(df)
 
 #   iris = datasets.load_iris()
@@ -69,14 +69,13 @@ def main():
 
 ########### START
   st.subheader("[사용자 입력에 따른 상태 예측]")
-
+  st.write("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
   predict_2 = clf.predict(df)
   predict_proba2 = clf.predict_proba(df)
 
   st.write(predict_proba2)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
-  st.subheader("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
 ########### END
 	
 	
