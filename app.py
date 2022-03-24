@@ -42,10 +42,6 @@ def main():
   st.subheader("[User의 주요 파라미터 설정치]")
   st.write(df)
 
-#   iris = datasets.load_iris()
-#   x=iris.data
-#   y=iris.target
-
 ###########################
   df_read = pd.read_csv("./pipe_data2r.csv", encoding='cp949')
   print(df_read)
@@ -84,7 +80,6 @@ def main():
   st.write(predict_proba)
 
   st.bar_chart(predict_proba[7:15])
-
 
 
 # -----------------------------------------------
