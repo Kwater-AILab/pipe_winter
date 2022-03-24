@@ -72,6 +72,18 @@ def main():
 
   st.bar_chart(predict_proba[7:12])
 
+
+
+########### 추가자료 start
+  st.subheader("단일 예측 확률")
+
+  predict_2 = clf.predict(df)
+  predict_proba2 = clf.predict_proba(df)
+
+  st.write(predict_proba2)
+  st.bar_chart(predict_proba2)
+########### 추가자료 end
+
 # -----------------------------------------------
   from sklearn.metrics import mean_absolute_error
   print('MAE score:', mean_absolute_error(y_test, predict_))
