@@ -13,10 +13,10 @@ def user_input_features() :
 #   rainfall = st.sidebar.slider('강수량(mm)',0, 1, 0.5)
 #   humid = st.sidebar.slider('습도',0, 1, 0.7)
 #   height = st.sidebar.slider('고도(EL)',0, 1, 0.5)
-  temp_amb = st.sidebar.slider('기온(°C)',-15, 15, -1)
+  temp_amb = st.sidebar.slider('기온(°C)',-15, 15, -8)
   rainfall = st.sidebar.slider('강수량(mm)',0.0, 25.0, 8.5)
   humid = st.sidebar.slider('습도',0.0, 1.0, 0.15)
-  height = st.sidebar.slider('고도(EL)',0.0, 50.0, 38.5)
+  height = st.sidebar.slider('고도(EL)',0.0, 50.0, 12.5)
   data = {'기온(°C)' : temp_amb,
           '강수량(mm)' : rainfall,
           '습도' : humid,
