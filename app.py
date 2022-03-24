@@ -43,7 +43,7 @@ def main():
   st.write(df)
 
 ###########################
-  df_read = pd.read_csv("./pipe_data2r.csv", encoding='cp949')
+  df_read = pd.read_csv("./pipe_data3r.csv", encoding='cp949')
   print(df_read)
 #   df_read.to_csv("pipe_data_return.csv", encoding='cp949')
 ###########################
