@@ -39,7 +39,7 @@ def main():
 
   df= user_input_features()
 
-  st.subheader("User의 주요 파라미터 설정치.")
+  st.subheader("[User의 주요 파라미터 설정치]")
   st.write(df)
 
 #   iris = datasets.load_iris()
@@ -79,7 +79,7 @@ def main():
 ########### END
 	
 	
-  st.subheader("검증set 전체 예측 확률")
+  st.subheader("[검증set 전체 예측 확률]")
   st.write(predict_proba)
 
   st.bar_chart(predict_proba[7:15])
@@ -103,7 +103,7 @@ def main():
 
   st.line_chart(predict_)
 
-  st.subheader("함내 상태 예측 분포")
+  st.subheader("[함내 상태 예측 범위 분포]")
 #   st.write(iris.target_names)
   st.write(y_test, predict_)
 
