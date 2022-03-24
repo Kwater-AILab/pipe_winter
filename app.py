@@ -65,14 +65,14 @@ def main():
 
 ########### START
   st.subheader("[사용자 입력에 따른 상태 예측]")
-  st.write("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
+  st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
   predict_2 = clf.predict(df)
   predict_proba2 = clf.predict_proba(df)
 
   st.write(predict_proba2)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
-  st.write("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
+  st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
 ########### END
 	
 	
@@ -89,7 +89,7 @@ def main():
   st.write(mean_absolute_error(y_test, predict_))  
 # -----------------------------------------------
 
-  st.subheader("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
+  st.subheader("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
 # print(df[' Grade'].value_counts())
 # Normal     3052        1
 # OK         2074          2
