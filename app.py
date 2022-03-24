@@ -34,7 +34,7 @@ def main():
   This app predicts the **Status of flowmeter** in winter!
   
   """)
-  st.write("User 변수설정을 위해 좌측상단의 ">"를 누르세요")
+  st.write("User 변수설정 좌측상단의 > 버튼 Click.")
   st.sidebar.header('User Input Parameters')
 
   df= user_input_features()
