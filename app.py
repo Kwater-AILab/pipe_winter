@@ -76,6 +76,7 @@ def main():
   st.write(predict_proba2)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
+  st.write("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
 ########### END
 	
 	
