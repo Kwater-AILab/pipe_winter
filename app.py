@@ -67,22 +67,25 @@ def main():
   predict_ = clf.predict(x_test)
   predict_proba = clf.predict_proba(x_test)
 
-  st.subheader("예측 확률")
-  st.write(predict_proba)
-
-  st.bar_chart(predict_proba[7:12])
-
-
-
-########### 추가자료 start
-  st.subheader("단일 예측 확률")
+########### START
+  st.subheader("[사용자 입력에 따른 상태 예측]")
 
   predict_2 = clf.predict(df)
   predict_proba2 = clf.predict_proba(df)
-  st.write(predict_2)
+
   st.write(predict_proba2)
   st.bar_chart(predict_proba2)
-########### 추가자료 end
+  st.write(predict_2)
+  st.subheader("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
+########### END
+	
+	
+  st.subheader("검증set 전체 예측 확률")
+  st.write(predict_proba)
+
+  st.bar_chart(predict_proba[7:15])
+
+
 
 # -----------------------------------------------
   from sklearn.metrics import mean_absolute_error
@@ -91,7 +94,7 @@ def main():
   st.write(mean_absolute_error(y_test, predict_))  
 # -----------------------------------------------
 
-  st.subheader("Index (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
+  st.subheader("Index : (1)=Normal (2)=OK (3)=Serious (4)=Warning, (0)=Caution")
 # print(df[' Grade'].value_counts())
 # Normal     3052        1
 # OK         2074          2
@@ -101,7 +104,7 @@ def main():
 
   st.line_chart(predict_)
 
-  st.subheader("함내 상태 예측")
+  st.subheader("함내 상태 예측 분포")
 #   st.write(iris.target_names)
   st.write(y_test, predict_)
 
