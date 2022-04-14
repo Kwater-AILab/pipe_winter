@@ -72,8 +72,8 @@ if st.checkbox('지도 표시(beta)'):
 	st.map(map_data)
 
   st.subheader("[사용자 입력에 따른 상태 예측]")
-  st.write("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
-
+  st.subheader("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
+ 
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
 
