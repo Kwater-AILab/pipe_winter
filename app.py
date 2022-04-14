@@ -76,8 +76,8 @@ def main():
 #=========================================
 #  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
-original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Original image</p>'
-st.markdown(original_title, unsafe_allow_html=True)
+  original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Original image</p>'
+  st.markdown(original_title, unsafe_allow_html=True)
 
 
   PP2 = round(predict_proba2[0,0],2)*100
