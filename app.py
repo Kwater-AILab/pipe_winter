@@ -65,12 +65,6 @@ def main():
 
 ########### START
 
-if st.checkbox('지도 표시(beta)'):
-	map_data = pd.DataFrame(
-		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
-    columns=['lat','lon'])
-	st.map(map_data)
-
   st.subheader("[사용자 입력에 따른 상태 예측]")
   st.subheader("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
  
@@ -124,6 +118,11 @@ if st.checkbox('지도 표시(beta)'):
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
 
+if st.checkbox('지도 표시(beta)'):
+	map_data = pd.DataFrame(
+		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
+    columns=['lat','lon'])
+	st.map(map_data)
 
 if __name__ == '__main__':
 	main()
