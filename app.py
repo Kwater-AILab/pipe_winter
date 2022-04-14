@@ -77,10 +77,10 @@ def main():
 #  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
 
-  PP2 = round(predict_proba2[0,0],2)
+  PP2 = round(predict_proba2[0,0],2)*100
 #  st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
-  st.write(" 동파안전 확률은  ",PP2*100, "% 입니다.")
-  st.write(" 동파위험 확률은  ",100-predict_proba2[0,0]*100, "% 입니다.")
+  st.write(" 동파안전 확률은  ",PP2, "% 입니다.")
+  st.write(" 동파위험 확률은  ",100-PP2, "% 입니다.")
  # st.write(predict_2[0,0]) 
  
   st.bar_chart(predict_proba2)
