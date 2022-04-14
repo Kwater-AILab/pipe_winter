@@ -77,9 +77,10 @@ def main():
 # st.write(df21)
 	
   st.write(predict_proba2)
-
   st.bar_chart(predict_proba2)
   st.write(predict_2)
+
+  st.write(predict_proba[0,1])
 
 ########### END
 	
