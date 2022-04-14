@@ -76,8 +76,7 @@ def main():
 #=========================================
 #  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
-  original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Original image</p>'
-  st.markdown(original_title, unsafe_allow_html=True)
+  
 
 
   PP2 = round(predict_proba2[0,0],2)*100
@@ -86,6 +85,9 @@ def main():
   st.write(" 동파위험 확률은  ",100-PP2, "% 입니다.")
  # st.write(predict_2[0,0]) 
  
+  sentence = '<p style="font-family:Courier; color:Blue; font-size: 20px;"> 동파안전 확률은  ",PP2, "% 입니다.</p>'
+  st.markdown(sentence, unsafe_allow_html=True)
+
   st.bar_chart(predict_proba2)
   st.write(predict_2)
 
