@@ -77,7 +77,7 @@ def main():
 #  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
 
-  PP2 = predict_proba2[0,0]
+  PP2 = round(predict_proba2[0,0],2)
 #  st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
   st.write(" 동파안전 확률은  ",PP2*100, "% 입니다.")
   st.write(" 동파위험 확률은  ",100-predict_proba2[0,0]*100, "% 입니다.")
