@@ -74,7 +74,7 @@ def main():
   st.write(predict_proba2)
 
 #=========================================
-  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
+#  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
   st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
   st.write(" 동파위험 확률은  ",100-predict_proba2[0,0]*100, "% 입니다.")
@@ -130,10 +130,10 @@ if st.checkbox('지도 표시(beta)'):
 if __name__ == '__main__':
 	main()
 
-if st.checkbox('지도 표시(beta)'):
-	map_data = pd.DataFrame(
-		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
-    columns=['lat','lon'])
-	st.map(map_data)	
+# if st.checkbox('지도 표시(beta)'):
+# 	map_data = pd.DataFrame(
+# 		np.random.randn(10,2) / [50,50] + [35.74544992, 128.0814886],
+#     columns=['lat','lon'])
+# 	st.map(map_data)	
 
 		
