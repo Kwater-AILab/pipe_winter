@@ -85,6 +85,8 @@ def main():
 #  st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
   st.write(" 동파안전 확률은  ",PP2, "% 입니다.")
   st.write(" 동파위험 확률은  ",100-PP2, "% 입니다.")
+  st.subheader(" 동파위험 확률은")
+  st.subheader(" 동파위험 확률은  ",100-PP2, "% 입니다.")
 # st.write(predict_2[0,0]) 
  
 #  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
