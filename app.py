@@ -74,7 +74,7 @@ def main():
   #st.write(df21)  ######################################
 
  # df21.columns = ['Normal','OK','Caution','Warning','Serious']
-  st.write(predict_proba1)
+  st.write(predict_proba)
   st.write(predict_)
   st.write(predict_proba2)
 
