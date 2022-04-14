@@ -71,7 +71,7 @@ def main():
   predict_proba2 = clf.predict_proba(df)
 
   df21 = predict_proba2
-  st.write(predict_proba2.shape)  ######################################
+  st.write(df21)  ######################################
 
   df21.columns = ['Normal','OK','Caution','Warning','Serious']
   #st.write(predict_proba2)
