@@ -85,7 +85,7 @@ def main():
   st.write(" 동파위험 확률은  ",100-PP2, "% 입니다.")
  # st.write(predict_2[0,0]) 
  
-  st.markdown('<style> .big-font {font-size:300px !important;}</style>', unsafe_allow_html=True)
+  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
   st.markdown('<p class="big-font">Hello World !!</p>',PP2, unsafe_allow_html=True)
 	   
   st.bar_chart(predict_proba2)
