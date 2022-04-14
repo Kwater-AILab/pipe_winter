@@ -64,21 +64,22 @@ def main():
   predict_proba = clf.predict_proba(x_test)
 
 ########### START
-  st.subheader("[사용자 입력에 따른 상태 예측]")
-  st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
-  predict_2 = clf.predict(df)
+  #st.subheader("[사용자 입력에 따른 상태 예측]")
+  #st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
+
+  predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
 
-  st.write(predict_proba2)
-  st.bar_chart(predict_proba2)
-  st.write(predict_2)
+#df.columns
+  #st.write(predict_proba2)
+  #st.bar_chart(predict_proba2)
+  #st.write(predict_2)
   st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
 ########### END
 	
 	
   st.subheader("[검증set 전체 예측 확률의 분포]")
   st.write(predict_proba)
-
   st.bar_chart(predict_proba[7:15])
 
 
