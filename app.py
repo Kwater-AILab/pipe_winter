@@ -65,7 +65,7 @@ def main():
 
 ########### START
   st.subheader("[사용자 입력에 따른 상태 예측]")
-  st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
+  st.write("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
 
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
@@ -74,14 +74,12 @@ def main():
   #st.write(df21)  ######################################
 
  # df21.columns = ['Normal','OK','Caution','Warning','Serious']
-  st.write(predict_proba)
-  st.write(predict_)
   st.write(predict_proba2)
 
  # st.write(df21)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
-  st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
+
 ########### END
 	
   st.subheader("[검증set 전체 예측 확률의 분포]")
