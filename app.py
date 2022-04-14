@@ -70,17 +70,16 @@ def main():
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
 
-  df21 = clf.predict_proba(df)
+ # df21 = clf.predict_proba(df)
   #st.write(df21)  ######################################
 
-  df21.columns = ['Normal','OK','Caution','Warning','Serious']
-  #st.write(predict_proba2)
-  st.write(df21)
+ # df21.columns = ['Normal','OK','Caution','Warning','Serious']
+  st.write(predict2)
+ # st.write(df21)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
   st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
 ########### END
-	
 	
   st.subheader("[검증set 전체 예측 확률의 분포]")
   st.write(predict_proba)
@@ -112,7 +111,6 @@ def main():
 # 	  y_test, predict_,
 # 	  columns=['실측치',''])
 #   st.line_chart(chart_data)
-
 
 #   st.subheader("상태예측 2nd")
 #   st.write(predict_)
