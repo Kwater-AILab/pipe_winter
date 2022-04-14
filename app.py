@@ -29,8 +29,8 @@ def user_input_features() :
 def main():
 	#st.title("Awesome Streamlit for MLDDD")
   st.write("""
-  # 기상자료 기반 AI 동파 예측 WebApp (by K-water AI Lab)
-
+  # 기상자료 기반 AI 동파 예측 WebApp 
+  (by K-water AI Lab)
   This app predicts the **Status of flowmeter** in winter!
   
   """)
