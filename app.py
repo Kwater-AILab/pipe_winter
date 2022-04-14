@@ -79,7 +79,7 @@ def main():
   
 
 
-  PP2 = round(predict_proba2[0,0],3)*100
+#  PP2 = round(predict_proba2[0,0],3)*100
   PP2 = round(predict_proba2[0,0])*100
 
 #  st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
