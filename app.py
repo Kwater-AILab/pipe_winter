@@ -74,7 +74,7 @@ def main():
   #st.write(df21)  ######################################
 
  # df21.columns = ['Normal','OK','Caution','Warning','Serious']
-  st.write(predict_2)
+ # st.write(predict_2)
  # st.write(df21)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
