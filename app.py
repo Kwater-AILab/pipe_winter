@@ -72,8 +72,10 @@ def main():
 
   df21 = predict_proba2
   st.write(predict_proba2.shape)  ######################################
-	
-  st.write(predict_proba2)
+
+  df21.columns = ['Normal','OK','Caution','Warning','Serious']
+  #st.write(predict_proba2)
+  st.write(df21)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
   st.write("Index : (0)=Normal, (1)=OK, (2)=Caution, (3)=Warning, (4)=Serious")
