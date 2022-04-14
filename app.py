@@ -70,7 +70,8 @@ def main():
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
 
-  st.write(predict_2.columns)
+  st.write(predict_2.info)  ######################################
+	
   st.write(predict_proba2)
   st.bar_chart(predict_proba2)
   st.write(predict_2)
