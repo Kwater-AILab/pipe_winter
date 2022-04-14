@@ -73,8 +73,9 @@ def main():
 	
   st.write(predict_proba2)
 
+  st.write(predict_proba2[0,0])
   st.write(predict_2[0,0])
-
+ 
   st.bar_chart(predict_proba2)
   st.write(predict_2)
 
