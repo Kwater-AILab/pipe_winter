@@ -74,9 +74,7 @@ def main():
   st.write(predict_proba2)
 
 #=========================================
-st.markdown(""" <style> .font {
-font-size:50px;} 
-</style> """, unsafe_allow_html=True)
+  st.markdown(""" <style> .font {font-size:50px;} </style> """, unsafe_allow_html=True)
 #=========================================
   st.subheader(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
   st.subheader(" 동파위험 확률은  ",100-predict_proba2[0,0]*100, "% 입니다.")
