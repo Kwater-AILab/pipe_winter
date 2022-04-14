@@ -70,6 +70,7 @@ def main():
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
 
+  df21 = predict_proba2
   st.write(predict_proba2.shape)  ######################################
 	
   st.write(predict_proba2)
