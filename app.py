@@ -66,7 +66,7 @@ def main():
 ########### START
 
   st.subheader("[사용자 입력에 따른 상태 예측]")
-  st.subheader("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
+  st.write("Index : (0)=평상, (1)=관심, (2)=주의, (3)=경계, (4)=심각")
  
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
@@ -78,7 +78,8 @@ st.markdown(""" <style> .font {
 font-size:50px;} 
 </style> """, unsafe_allow_html=True)
 #=========================================
-st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
+  st.subheader(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
+  st.subheader(" 동파위험 확률은  ",100-predict_proba2[0,0]*100, "% 입니다.")
  # st.write(predict_2[0,0]) 
  
   st.bar_chart(predict_proba2)
