@@ -88,7 +88,7 @@ def main():
 #  sentence = '<p style="font-family:Courier; color:Blue; font-size: 20px;"> 동파안전 확률 = </p>'
   sentence = 'style="font-family:Courier; color:Blue; font-size: 20px;"> 동파안전 확률 = '
   st.markdown(sentence, unsafe_allow_html=True)
-  st.write(PP2,"%입니다.)
+  st.write(PP2,"%입니다.")
 	   
   st.bar_chart(predict_proba2)
   st.write(predict_2)
