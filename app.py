@@ -73,7 +73,12 @@ def main():
 	
   st.write(predict_proba2)
 
-  st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
+#=========================================
+st.markdown(""" <style> .font {
+font-size:50px;} 
+</style> """, unsafe_allow_html=True)
+#=========================================
+st.write(" 동파안전 확률은  ",predict_proba2[0,0]*100, "% 입니다.")
  # st.write(predict_2[0,0]) 
  
   st.bar_chart(predict_proba2)
