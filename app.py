@@ -70,17 +70,15 @@ def main():
  
   predict_2 = clf.predict(df)	
   predict_proba2 = clf.predict_proba(df)
-
-# df21 = clf.predict_proba(df
-#  df21=[1,5]
-#  df21.columns = ['Normal','OK','Caution','Warning','Serious']
-# st.write(df21)
 	
   st.write(predict_proba2)
+
+  st.write(predict_2[0,0])
+
   st.bar_chart(predict_proba2)
   st.write(predict_2)
 
-  st.write(predict_proba[0,1])
+  
 
 ########### END
 	
